@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+/* Outras regras de CSS */
+
+/* Outras regras de CSS */
+
+body {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg,#5f84ff, #a27bfe, #7ba9fe, #fe7b7b);
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.664);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .wave-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden; /* Hides any overflow from the animated SVG */
+    height: 40px; /* Adjust based on the height of your wave SVG */
+  }
+  
+  .wave-svg {
+    position: absolute;
+    width: 200%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    animation: wave-animation 10s linear infinite;
+  }
+  
+  @keyframes wave-animation {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  h2 {
+    font-size: 28px;
+    color: #333;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  input {
+    padding: 12px;
+    width: 100%;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  input:focus {
+    border-color: #e100ff;  ;
+  }
+  
+  button {
+    padding: 12px 24px;
+    font-size: 18px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #3600b3;
+  }
+  
+  .qrcodeContent img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+  
