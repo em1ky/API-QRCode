@@ -7,8 +7,11 @@ Efeito de Ondas Animadas: Um SVG com uma animação contínua de ondas que adici
 
 Tecnologias Utilizadas
 HTML: Estrutura do conteúdo e elementos da página.
+
 CSS: Estilização da página, incluindo animações e layout responsivo.
+
 JavaScript: Manipulação do DOM e geração dinâmica do QR Code usando a API pública de QR Code.
+
 SVG: Animação de ondas contínuas na parte inferior da página para um efeito visual atraente.
 
 
